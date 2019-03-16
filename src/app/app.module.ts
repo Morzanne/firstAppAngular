@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HightLightDirective } from './hight-light.directive';
 import { ShowMovieDirective } from './show-movie.directive';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { TheWidthDirective } from './sign-up/the-width.directive';
 
 
 
@@ -13,6 +15,8 @@ import { ShowMovieDirective } from './show-movie.directive';
     AppComponent,
     HightLightDirective,
     ShowMovieDirective,
+    SignUpComponent,
+    TheWidthDirective,
   
  
   ],
