@@ -6,6 +6,7 @@ import { HightLightDirective } from './hight-light.directive';
 import { ShowMovieDirective } from './show-movie.directive';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { TheWidthDirective } from './sign-up/the-width.directive';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +22,8 @@ import { TheWidthDirective } from './sign-up/the-width.directive';
  
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
