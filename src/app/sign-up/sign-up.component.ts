@@ -10,6 +10,8 @@ export class SignUpComponent implements OnInit{
 
   email : Email = {
     adresse: "Enter your email here !"
+    
+    
   }
 
   constructor() { }

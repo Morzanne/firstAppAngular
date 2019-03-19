@@ -7,6 +7,7 @@ import { ShowMovieDirective } from './show-movie.directive';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { TheWidthDirective } from './sign-up/the-width.directive';
 import { FormsModule } from '@angular/forms';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     ShowMovieDirective,
     SignUpComponent,
     TheWidthDirective,
+    UserProfileComponent,
   
  
   ],
