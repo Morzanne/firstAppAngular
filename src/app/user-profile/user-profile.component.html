@@ -1,18 +1,24 @@
-<div class="CI">
+
+
+<section>
+
+    <div class="CI">
     
-    <h3>Fiche de contact</h3>
+        <h3>Fiche de contact</h3>
 
-    <p>
-        <img [src]="this.user.photo" [alt]="photo" />
-    </p>
+        <p>
+            <img [src]="this.user.photo" [alt]="photo" />
+        </p>
 
-    <h2>Nom: {{user.name}}</h2>
-    <h2>Prénom: {{user.firstName}}</h2>
-    <button (click)="afficherAge()">Hide my age</button>
-    <p *ngIf="show">{{user.age}}</p>
-    <p>{{user.quote}}</p>
+        <h2>Nom: {{user.name}}</h2>
+        <h2>Prénom: {{user.firstName}}</h2>
+        <button (click)="afficherAge()">Hide my age</button>
+        <p *ngIf="show">{{user.age}}</p>
+        <p>{{user.quote}}</p>
 
 
-    <h1><input [(ngModel)]="user.quote"/></h1>
+        <h1><input [(ngModel)]="user.quote"/></h1>
 
-</div>
+    </div>
+    
+</section>
