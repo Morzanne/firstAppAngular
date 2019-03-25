@@ -20,9 +20,10 @@ export class UserProfileComponent implements OnInit {
 
   ngOnInit() {
   }
+  show:boolean=false;
 
   afficherAge(){
-    document.getElementById('Hide').style.visibility="hidden"
+    this.show = !this.show;
   }
 
 }

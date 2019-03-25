@@ -1,5 +1,13 @@
 .changeColor{
-    background-color: red;
+    background-color: yellow;
     font-size: 30px;
+}
+@font-face{
+    src: url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+    font-family: 'Baloo Chettan', cursive; 
+    
+}
+*{
+    font-family: 'Baloo Chettan', cursive; 
 }
 
