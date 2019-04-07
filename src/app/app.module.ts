@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 
+
 import { AppComponent } from './app.component';
 import { HightLightDirective } from './hight-light.directive';
 import { ShowMovieDirective } from './show-movie.directive';

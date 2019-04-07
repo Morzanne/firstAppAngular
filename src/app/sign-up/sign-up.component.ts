@@ -8,17 +8,24 @@ import { Email  } from './email';
 })
 export class SignUpComponent implements OnInit{
 
-  email : Email = {
-    adresse: "Enter your email here !"
+  email: Email = {
+    adresse: "Enter your email here !",
+    user:"",
+    emailAdress:"",
     
     
   }
+  
 
   constructor() { }
 
   ngOnInit(){
     
 
+  }
+  
+  onSubmit(){
+    alert("Formulaire soumis !");
   }
 
 

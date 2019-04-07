@@ -1,3 +1,32 @@
 
 
-<h1 >{{email.adresse}}</h1><input [(ngModel)]="email.adresse" type="email" name="email" placeholder="Type your email adress here" />
+<h1 class="d-none">{{email.adresse}}</h1><input class="d-none" [(ngModel)]="email.adresse" type="email" name="email" placeholder="Type your email adress here" />
+<br/>
+<form (ngSubmit)="myForm.valid && onSubmit()" class="d-flex flex-column align-items-center justify-content-center" #myForm="ngForm">
+    <div class="form-group d-flex flex-column col-4 align-items-center">
+        <label for="User-order">User</label>
+        <input id="User-order" class="form-control" name="User-order" type="text" [(ngModel)]="email.user" #User="ngModel" required minlength="4" maxlength="25" autocomplete="off">     
+    </div>
+    <div *ngIf="myForm.submitted">
+        <div *ngIf="User.errors">
+            <span *ngIf="User.errors.required">Vous devez saisir quelque chose</span>
+            <span *ngIf="User.errors.minlength">Vous devez saisir au moins 4 charactères</span>
+            <span *ngIf="User.errors.maxlength">Quantité maximale : 25 charactères !</span>
+        </div>
+    </div>
+    <div class="form-group d-flex flex-column col-4 align-items-center">
+        <label for="Email-order">Email</label>
+        <input id="Email-order" class="form-control" name="Email-order" type="text" [(ngModel)]="email.emailAdress" #emailAdress="ngModel" required email autocomplete="off">
+    </div>
+    <div *ngIf="myForm.submitted">
+        <div *ngIf="emailAdress.errors">
+            <span *ngIf="emailAdress.errors.required">Le champs est requis</span>
+            <span *ngIf="emailAdress.errors.email">Le champs email est invalide</span>
+        </div>
+    </div>
+    <button type="submit">Soumettre</button>
+    
+</form>
+
+
+
